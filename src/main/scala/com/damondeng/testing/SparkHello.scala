@@ -17,6 +17,13 @@ object SparkHello {
     val conf = new SparkConf().setAppName("HelloWorld")
     val sc = new SparkContext(conf)
 
+    val testingArray = Array(1,2,3,4)
+
+    val testingRDD = sc.parallelize(testingArray)
+
+    testingRDD.collect();
+
+    testingRDD.saveAsTextFile("file:///Users/mingxuan/Desktop/temp/output/")
     
   }
 
