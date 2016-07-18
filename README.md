@@ -1,7 +1,7 @@
 # HelloSpark
 ------------
 
-A simple project of Spark using sbt to comple.
+A simple project of Spark written with Scala, using sbt to compile.
 
 Usage:
 ----
